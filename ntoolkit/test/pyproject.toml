@@ -1,0 +1,19 @@
+[project]
+name = "ntoolkit-test"
+version = "0.1.0"
+description = "ntoolkit-test"
+authors = [
+    {name = "nullqwertyuiop", email = "null@member.fsf.org"},
+]
+dependencies = []
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
