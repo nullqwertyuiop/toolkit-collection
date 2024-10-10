@@ -5,7 +5,9 @@ description = "Toolkit collection for self use"
 authors = [
     {name = "nullqwertyuiop", email = "null@member.fsf.org"},
 ]
-dependencies = []
+dependencies = [
+    "loguru>=0.7.2",
+]
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "MIT"}
@@ -14,6 +16,12 @@ license = {text = "MIT"}
 [project.optional-dependencies]
 test = [
     "ntoolkit-test @ file:///${PROJECT_ROOT}/ntoolkit/test",
+]
+chat = [
+    "ntoolkit-chat @ file:///${PROJECT_ROOT}/ntoolkit/chat",
+]
+twitter = [
+    "ntoolkit-twitter @ file:///${PROJECT_ROOT}/ntoolkit/twitter",
 ]
 
 [tool.pdm]
